@@ -1,73 +1,6 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background-color: #400D01;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #ffaa56;
-}
-
-.loading {
-  background: #592202;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: loading-disparition .8s 2.4s ease-in forwards;
-          animation: loading-disparition .8s 2.4s ease-in forwards;
-}
-
-.loading img {
-  margin-bottom: 5%;
-}
-
-.loading__pictos {
-  width: 70vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.fa-ice-cream {
-  -webkit-animation: mvtfood 1.5s 50ms ease-in;
-          animation: mvtfood 1.5s 50ms ease-in;
-  color: #ffaa56;
-}
-
-.fa-hamburger {
-  -webkit-animation: mvtfood 1.5s 180ms ease-in;
-          animation: mvtfood 1.5s 180ms ease-in;
-  color: #ffaa56;
-}
-
-.fa-carrot {
-  -webkit-animation: mvtfood 1.5s 300ms ease-in;
-          animation: mvtfood 1.5s 300ms ease-in;
-  color: #ffaa56;
-}
-
 @-webkit-keyframes mvtfood {
   0% {
     opacity: 0;
@@ -102,7 +35,6 @@
             transform: translateY(0%);
   }
 }
-
 @keyframes mvtfood {
   0% {
     opacity: 0;
@@ -178,20 +110,98 @@
 
 @-webkit-keyframes loading-disparition {
   from {
+    z-index: 1;
     opacity: 1;
   }
   to {
     opacity: 0;
+    z-index: -1;
   }
 }
 
 @keyframes loading-disparition {
   from {
+    z-index: 1;
     opacity: 1;
   }
   to {
     opacity: 0;
+    z-index: -1;
   }
+}
+
+body {
+  z-index: 9999;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #400D01;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffaa56;
+}
+
+.loading {
+  background: #592202;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: loading-disparition 1500ms 2.2s ease-in forwards;
+          animation: loading-disparition 1500ms 2.2s ease-in forwards;
+}
+
+.loading img {
+  margin-bottom: 8%;
+}
+
+.loading__pictos {
+  width: 80vh;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.fa-ice-cream {
+  -webkit-animation: mvtfood 1.5s 50ms ease-in;
+          animation: mvtfood 1.5s 50ms ease-in;
+  color: #ffaa56;
+}
+
+.fa-hamburger {
+  -webkit-animation: mvtfood 1.5s 180ms ease-in;
+          animation: mvtfood 1.5s 180ms ease-in;
+  color: #ffaa56;
+}
+
+.fa-carrot {
+  -webkit-animation: mvtfood 1.5s 300ms ease-in;
+          animation: mvtfood 1.5s 300ms ease-in;
+  color: #ffaa56;
 }
 
 .index__header {

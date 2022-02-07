@@ -19,7 +19,7 @@ body{
 
 // animation loader remplacer le display none par display flex
 .loading {
-  background: $bg1;
+  background: $bg-animation;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -30,12 +30,12 @@ body{
   align-items: center;
   animation: loading-disparition 1500ms 2.2s ease-in forwards; 
   img{
-      margin-bottom: 8%;
+      margin-bottom: 1%;
   }
 }
 
 .loading__pictos {
-  width: 80vh;
+  width: 45%;
   font-size: 1.5em;
   display: flex;
   justify-content: space-evenly;
@@ -43,18 +43,18 @@ body{
 
 .fa-ice-cream {
   animation: mvtfood 1.5s 50ms ease-in;
-  color: $title_color;
+  color: $bg;
 
 }
 
 .fa-hamburger {
   animation: mvtfood 1.5s 180ms ease-in;
-    color: $title_color;
+    color: $bg;
 }
 
 .fa-carrot {
   animation: mvtfood 1.5s 300ms ease-in;
-  color: $title_color;
+  color: $bg;
 }
 
 // header
@@ -88,7 +88,7 @@ body{
        color: $blanc;
        padding-right: 30px;
        font-family: $text;
-       font-weight: 400;
+       font-weight: 600;
        &:hover, &:focus{
            color: $title_color;
     }
@@ -106,6 +106,7 @@ body{
         font-family: $text;
         font-weight: 600;
         letter-spacing: 1px;
+        text-align: center;
     }
     .button{
         width: 50%;

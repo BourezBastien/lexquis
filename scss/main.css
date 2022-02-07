@@ -140,12 +140,12 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background-color: #400D01;
+  background-color: #BFA27E;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ffaa56;
+  background: #592202;
 }
 
 .loading {
@@ -172,11 +172,11 @@ body {
 }
 
 .loading img {
-  margin-bottom: 8%;
+  margin-bottom: 1%;
 }
 
 .loading__pictos {
-  width: 80vh;
+  width: 45%;
   font-size: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,23 +189,23 @@ body {
 .fa-ice-cream {
   -webkit-animation: mvtfood 1.5s 50ms ease-in;
           animation: mvtfood 1.5s 50ms ease-in;
-  color: #ffaa56;
+  color: #BFA27E;
 }
 
 .fa-hamburger {
   -webkit-animation: mvtfood 1.5s 180ms ease-in;
           animation: mvtfood 1.5s 180ms ease-in;
-  color: #ffaa56;
+  color: #BFA27E;
 }
 
 .fa-carrot {
   -webkit-animation: mvtfood 1.5s 300ms ease-in;
           animation: mvtfood 1.5s 300ms ease-in;
-  color: #ffaa56;
+  color: #BFA27E;
 }
 
 .index__header {
-  background-color: #400D01;
+  background-color: #BFA27E;
   width: 100%;
   height: 100vh;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%, 0 0);
@@ -214,7 +214,7 @@ body {
 
 .index__header h1 {
   font-size: 2.3em;
-  color: #ffaa56;
+  color: #592202;
   font-family: "Cherry Swash", cursive;
   padding-bottom: 3px;
 }
@@ -241,14 +241,14 @@ body {
 
 .index__header ul li a {
   text-decoration: none;
-  color: white;
+  color: #F2F2F2;
   padding-right: 30px;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .index__header ul li a:hover, .index__header ul li a:focus {
-  color: #ffaa56;
+  color: #592202;
 }
 
 .index__header .index__header__information {
@@ -274,6 +274,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .index__header .index__header__information .button {
@@ -294,9 +295,9 @@ body {
 
 .index__header .index__header__information .button a {
   text-decoration: none;
-  color: white;
+  color: #F2F2F2;
   font-size: 1.5em;
-  background-color: #ffaa56;
+  background-color: #592202;
   padding: 5px 30px;
   border-radius: 5px;
 }

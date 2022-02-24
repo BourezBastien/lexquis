@@ -53,6 +53,7 @@
 
 
 @keyframes loading-disparition {
+  
  from {
    z-index: 1;
    opacity:1;
@@ -61,6 +62,5 @@
   to {
    opacity: 0;
    z-index: -1;
-   
   }
 }

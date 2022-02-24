@@ -135,18 +135,22 @@ body {
   text-decoration: none;
 }
 
-::-webkit-scrollbar {
+body a {
+  text-decoration: none;
+}
+
+body::-webkit-scrollbar {
   width: 8px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background: #BFA27E;
   background-clip: content-box;
 }
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: #592202;
   height: 120px;
 }
@@ -249,7 +253,11 @@ body {
   font-weight: 600;
 }
 
-.index__header ul li a:hover, .index__header ul li a:focus {
+.index__header ul li a:hover, .index__header ul li a:focus, .index__header ul li a:target, .index__header ul li a::-moz-selection, .index__header ul li a:active {
+  color: #592202;
+}
+
+.index__header ul li a:hover, .index__header ul li a:focus, .index__header ul li a:target, .index__header ul li a::selection, .index__header ul li a:active {
   color: #592202;
 }
 
@@ -317,13 +325,13 @@ body {
 }
 
 .index__section__grid {
-  width: 70%;
-  gap: 35px;
+  width: 50%;
+  gap: 30px;
   height: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   margin: 3% auto;
 }
 
@@ -346,6 +354,10 @@ body {
 .index__items img {
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
 }
 
 .index__items h1 {
@@ -358,7 +370,8 @@ body {
 
 .index__items p {
   padding: 8px;
-  text-align: center;
+  text-align: left;
+  height: 100%;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -382,5 +395,204 @@ body {
   font-size: 1.2em;
   color: #592202;
   border-bottom: 2px solid #F2F2F2;
+}
+
+.index__section__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #BFA27E;
+  width: 100%;
+  height: 95vh;
+  -webkit-clip-path: polygon(90% 10%, 100% 0, 100% 100%, 0 100%, 0 0, 10% 10%);
+          clip-path: polygon(90% 10%, 100% 0, 100% 100%, 0 100%, 0 0, 10% 10%);
+  margin-bottom: 10%;
+}
+
+.index__section__menu .menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #BFA27E;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.index__section__menu .menu__container h1 {
+  padding: 10px;
+  margin-top: 12%;
+  text-align: center;
+  font-size: 1.8em;
+  color: #592202;
+  font-family: "Cherry Swash", cursive;
+}
+
+.index__section__menu .menu__container h3 {
+  padding: 10px;
+  margin-top: 2%;
+  text-align: center;
+  width: 75%;
+  font-size: 1.5em;
+  color: beige;
+  font-family: "Cherry Swash", cursive;
+}
+
+.index__section__menu .menu__container .menu {
+  margin-top: 5%;
+  margin-bottom: 15%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 40vw;
+  height: 100vw;
+  overflow-y: scroll;
+  border: 2px solid #592202;
+  border-radius: 6px;
+}
+
+.index__section__menu .menu__container .menu::-webkit-scrollbar {
+  display: none;
+}
+
+.index__section__menu .menu__container .menu::-webkit-scrollbar-track {
+  display: none;
+}
+
+.index__section__menu .menu__container .menu::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.index__section__menu .menu__container .menu .Entree, .index__section__menu .menu__container .menu .Viandes, .index__section__menu .menu__container .menu .Pate, .index__section__menu .menu__container .menu .Sauces, .index__section__menu .menu__container .menu .Accompagnements, .index__section__menu .menu__container .menu .Burger, .index__section__menu .menu__container .menu .midi, .index__section__menu .menu__container .menu .Dessert, .index__section__menu .menu__container .menu .Cocktails, .index__section__menu .menu__container .menu .Boissons {
+  width: 100%;
+  height: auto;
+}
+
+.index__section__menu .menu__container .menu .Entree h1, .index__section__menu .menu__container .menu .Viandes h1, .index__section__menu .menu__container .menu .Pate h1, .index__section__menu .menu__container .menu .Sauces h1, .index__section__menu .menu__container .menu .Accompagnements h1, .index__section__menu .menu__container .menu .Burger h1, .index__section__menu .menu__container .menu .midi h1, .index__section__menu .menu__container .menu .Dessert h1, .index__section__menu .menu__container .menu .Cocktails h1, .index__section__menu .menu__container .menu .Boissons h1 {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 0;
+  font-size: 2em;
+  color: #592202;
+  font-family: "Cherry Swash", cursive;
+  width: 100%;
+  height: auto;
+  margin-top: 3%;
+}
+
+.item_annexe1 {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item_annexe2 {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subtitle {
+  margin-top: 1%;
+  font-size: 1em;
+  margin-left: 11%;
+  width: 50%;
+  font-family: "Open Sans", sans-serif;
+  color: beige;
+}
+
+.plat_prix {
+  margin-top: 1%;
+  font-size: 1.3em;
+  font-family: "Open Sans", sans-serif;
+  color: beige;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 4% auto;
+  padding-bottom: 8px;
+  border: 2px solid #592202;
+  border-radius: 6px;
+  z-index: 0;
+}
+
+.item h2 {
+  font-size: 1.8em;
+  margin-left: 10%;
+  font-family: "Cherry Swash", cursive;
+  color: beige;
+}
+
+.item p {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: beige;
+}
+
+.ribbon-wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  top: -3px;
+  left: -3px;
+  z-index: 1;
+}
+
+.ribbon-wrapper .ribbon {
+  font-size: "Cherry Swash", cursive;
+  font-weight: 600;
+  z-index: 1;
+  font-size: 1.3em;
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  position: relative;
+  padding: 7px 0;
+  top: 13px;
+  left: -30px;
+  width: 120px;
+  background-color: #592202;
+  color: #F2F2F2;
 }
 /*# sourceMappingURL=main.css.map */

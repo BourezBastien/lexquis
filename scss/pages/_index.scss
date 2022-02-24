@@ -1,33 +1,37 @@
 body{
     z-index: 9999;
     text-decoration: none;
+    a{
+      text-decoration: none;
+    }
 }
 
 // scrollbar custom 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 8px;
   }
   
   /* Track */
-  ::-webkit-scrollbar-track {
+  body::-webkit-scrollbar-track {
     background: $bg;
     background-clip: content-box; 
   }
 
   
   /* Handle */
-  ::-webkit-scrollbar-thumb {
+  body::-webkit-scrollbar-thumb {
     background: $title_color;
     height: 120px;
   }
 
 // animation loader remplacer le display none par display flex
+
 .loading {
   background: $bg-animation;
   position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 1;
+  z-index: 1; 
   display: none; 
   flex-direction: column;
   justify-content: center;
@@ -94,7 +98,7 @@ body{
        padding-right: 30px;
        font-family: $text;
        font-weight: 600;
-       &:hover, &:focus{
+       &:hover, &:focus, &:target, &::selection, &:active{
            color: $title_color;
     }
     // information
@@ -143,11 +147,11 @@ body{
   }
 }
 .index__section__grid{
-  width: 70%;
-  gap: 35px;
+  width: 50%;
+  gap: 30px;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: 3% auto;
 }
 
@@ -161,6 +165,8 @@ body{
   flex-direction: column;
   img{
     object-fit: cover;
+    width: 100%;
+    height: min-content;
   }
   h1{
     padding: 10px;
@@ -171,7 +177,8 @@ body{
   }
   p{
     padding: 8px;
-    text-align: center;
+    text-align: left;
+    height: 100%;
     font-family: $text;
   }
   .index__more{
@@ -188,5 +195,168 @@ body{
       color: $title_color;
       border-bottom: 2px solid $blanc;
     }
+  }
+}
+
+// INDEX MENU 
+.index__section__menu{
+  display: flex;
+  background-color: $bg;
+  width: 100%;
+  height: 95vh;
+  clip-path: polygon(90% 10%, 100% 0, 100% 100%, 0 100%, 0 0, 10% 10%);
+  margin-bottom: 10%;
+  // clip-path: polygon(100% 0, 100% 100%, 90% 90%, 10% 90%, 0 100%, 0 0);
+  .menu__container{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color:$bg;
+    align-items: center;
+    h1{
+      padding: 10px;
+      margin-top: 12%;
+      text-align: center;
+      font-size: 1.8em;
+      color: $title_color;
+      font-family: $title;
+    }
+   h3{
+      padding: 10px;
+      margin-top: 2%;
+      text-align: center;
+      width: 75%;
+      font-size: 1.5em;
+      color: $beige;
+      font-family: $title;
+    }
+    .menu{
+      margin-top: 5%;
+      margin-bottom: 15%;
+      -ms-overflow-style: none; 
+      scrollbar-width: none;  
+      width: 40vw;
+      height: 100vw;
+      overflow-y: scroll;
+      border: 2px solid $bg-animation;
+      border-radius: 6px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      
+      &::-webkit-scrollbar-track {
+        display: none;
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        display: none;
+      }
+      .Entree, .Viandes, .Pate, .Sauces, .Accompagnements, .Burger, .midi, .Dessert, .Cocktails, .Boissons{
+        width: 100%;
+        height: auto;
+        h1{
+          text-align: center;
+          margin: 0 auto;
+          margin-top: 0;
+          font-size: 2em;
+          color: $title_color;
+          font-family: $title;
+          width: 100%;
+          height: auto;
+          margin-top: 3%;
+        }
+      }
+    }
+  }
+
+}
+
+
+
+.item_annexe1{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.item_annexe2{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtitle{
+  margin-top: 1%;
+  font-size: 1em;
+  margin-left: 11%;
+  width: 50%;
+  font-family: $text;
+  color: $beige;
+}
+.plat_prix{
+  margin-top: 1%;
+  font-size: 1.3em;
+  font-family: $text;
+  color: $beige;
+}
+
+.item{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 90%;
+  margin: 4% auto;
+  padding-bottom: 8px;
+  border: 2px solid $title_color;
+  border-radius: 6px;
+  z-index: 0;
+
+  h2{
+    font-size: 1.8em;
+    margin-left: 10%;
+    font-family: $title;
+    color: $beige;
+  }
+  p{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: $text;
+    color: $beige;
+  }
+}
+
+
+// étiquettes item menu 
+
+.ribbon-wrapper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  top: -3px;
+  left: -3px;
+  z-index: 1;
+  .ribbon {
+    font-size: $title;
+    font-weight: 600;
+    z-index: 1;
+    font-size: 1.3em;
+    text-align: center;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform:    rotate(-45deg);
+    -ms-transform:     rotate(-45deg);
+    -o-transform:      rotate(-45deg);
+    position: relative;
+    padding: 7px 0;
+    top: 13px;
+    left: -30px;
+    width: 120px;
+    background-color: $bg-animation;
+    color: $blanc;
   }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,26 +11,27 @@
 
     <!-- favicon -->
 
-    <link rel="icon" type="image/png" href="ressources/logo.png"/>
+    <link rel="icon" type="image/png" href="ressources/logo.png" />
 
     <!-- titre de la page -->
     <title>Acceuil</title>
-    
+
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
+
 <body>
     <div class="loading">
         <img src="ressources/logo.png" alt="Logo du site">
-        <p class="loading__pictos"> 
+        <p class="loading__pictos">
             <i class="fas fa-carrot fa-2x"></i>
             <i class="fas fa-hamburger fa-2x"></i>
             <i class="fas fa-ice-cream fa-2x"></i>
         </p>
-      </div>
+    </div>
 
-    <header class="index__header" id="accueil"> 
+    <header class="index__header" id="accueil">
         <nav>
             <ul>
                 <h1>L'exquis</h1>
@@ -54,34 +56,67 @@
     <div class="index__title__grid">
         <h1>Nos Spécialités</h1>
     </div>
-    <section class="index__section__grid">
-        <div class="index__items">
-            <img src="img/20210917_124033.jpg" alt="image de présentation menu">
-            <h1>cccc</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates iste, veniam repellendus quam quasi eaque in alias dicta excepturi deleniti? Necessitatibus quod, aut tenetur consequuntur sunt mollitia exercitationem delectus voluptates!</p>
-            <div class="index__more">
-                <a href="#">En savoir plus</a>
-            </div>
-        </div>
-        <div class="index__items">
-            <img src="img/20210917_124033.jpg" alt="image de présentation menu">
-            <h1>cccc</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates iste, veniam repellendus quam quasi eaque in alias dicta excepturi deleniti? Necessitatibus quod, aut tenetur consequuntur sunt mollitia exercitationem delectus voluptates!</p>
-            <div class="index__more">
-                <a href="#">En savoir plus</a>
-            </div>
-        </div>
-        <div class="index__items">
-            <img src="img/20210917_124033.jpg" alt="image de présentation menu">
-            <h1>cccc</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates iste, veniam repellendus quam quasi eaque in alias dicta excepturi deleniti? Necessitatibus quod, aut tenetur consequuntur sunt mollitia exercitationem delectus voluptates!</p>
-            <div class="index__more">
-                <a href="#">En savoir plus</a>
-            </div>
-        </div>
 
+    <!-- Section spécialités  -->
+    <section class="index__section__grid" id="main">
     </section>
 
+    <!-- Section menu  -->
+
+    <section class="index__section__menu">
+        <div class="menu__container">
+            <h1>Notre Menu</h1>
+            <h3>Tous nos plats sont accompagnés d'une salade, d'une sauce et d'un accompagnement ( Voir menu )</h3>
+            <div class="menu">
+                <div class="Entree">
+                    <h1>Entrée</h1>
+
+                </div>
+                <div class="Viandes">
+                    <h1>Viandes</h1>
+                    
+                </div>
+                <div class="Pate">
+                    <h1>Pate</h1>
+                    
+                </div>
+                <div class="Sauces">
+                    <h1>Sauces</h1>
+                    
+                </div>
+                <div class="Accompagnements">
+                    <h1>Accompagnements</h1>
+                    
+                </div>
+                <div class="Burger">
+                    <h1>Burger</h1>
+                    
+                </div>
+                <div class="midi">
+                    <h1>Formule du midi</h1>
+                    
+                </div>
+                <div class="Dessert">
+                    <h1>Dessert</h1>
+                    
+                </div>
+                <div class="Cocktails">
+                    <h1>Cocktails</h1>
+                    
+                </div>
+                <div class="Boissons">
+                    <h1>Boissons</h1>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="menu__right">
+
+        </div>
+    </section>
+
+    <script src="js/API/api.js"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>

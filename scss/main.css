@@ -369,32 +369,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .index__items p {
-  padding: 8px;
+  padding: 18px;
   text-align: left;
   height: 100%;
   font-family: "Open Sans", sans-serif;
-}
-
-.index__items .index__more {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  padding: 10px;
-}
-
-.index__items .index__more a {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  padding-bottom: 2px;
-  font-family: "Open Sans", sans-serif;
-  text-decoration: none;
-  font-size: 1.2em;
-  color: #592202;
-  border-bottom: 2px solid #F2F2F2;
 }
 
 .index__section__menu {
@@ -406,7 +384,6 @@ body::-webkit-scrollbar-thumb {
   height: 95vh;
   -webkit-clip-path: polygon(90% 10%, 100% 0, 100% 100%, 0 100%, 0 0, 10% 10%);
           clip-path: polygon(90% 10%, 100% 0, 100% 100%, 0 100%, 0 0, 10% 10%);
-  margin-bottom: 10%;
 }
 
 .index__section__menu .menu__container {
@@ -417,7 +394,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50vw;
+  width: 50%;
   height: 100vh;
   margin: 0 auto;
   background-color: #BFA27E;
@@ -450,7 +427,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 15%;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  width: 40vw;
+  width: 80%;
   height: 100vw;
   overflow-y: scroll;
   border: 2px solid #592202;
@@ -469,12 +446,12 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
-.index__section__menu .menu__container .menu .Entree, .index__section__menu .menu__container .menu .Viandes, .index__section__menu .menu__container .menu .Pate, .index__section__menu .menu__container .menu .Sauces, .index__section__menu .menu__container .menu .Accompagnements, .index__section__menu .menu__container .menu .Burger, .index__section__menu .menu__container .menu .midi, .index__section__menu .menu__container .menu .Dessert, .index__section__menu .menu__container .menu .Cocktails, .index__section__menu .menu__container .menu .Boissons {
+.index__section__menu .menu__container .menu .Entree, .index__section__menu .menu__container .menu .Viandes, .index__section__menu .menu__container .menu .Pate, .index__section__menu .menu__container .menu .Sauces, .index__section__menu .menu__container .menu .Accompagnements, .index__section__menu .menu__container .menu .Burger, .index__section__menu .menu__container .menu .midi, .index__section__menu .menu__container .menu .Dessert, .index__section__menu .menu__container .menu .Cocktails, .index__section__menu .menu__container .menu .Boissons, .index__section__menu .menu__container .menu .Enfant {
   width: 100%;
   height: auto;
 }
 
-.index__section__menu .menu__container .menu .Entree h1, .index__section__menu .menu__container .menu .Viandes h1, .index__section__menu .menu__container .menu .Pate h1, .index__section__menu .menu__container .menu .Sauces h1, .index__section__menu .menu__container .menu .Accompagnements h1, .index__section__menu .menu__container .menu .Burger h1, .index__section__menu .menu__container .menu .midi h1, .index__section__menu .menu__container .menu .Dessert h1, .index__section__menu .menu__container .menu .Cocktails h1, .index__section__menu .menu__container .menu .Boissons h1 {
+.index__section__menu .menu__container .menu .Entree h1, .index__section__menu .menu__container .menu .Viandes h1, .index__section__menu .menu__container .menu .Pate h1, .index__section__menu .menu__container .menu .Sauces h1, .index__section__menu .menu__container .menu .Accompagnements h1, .index__section__menu .menu__container .menu .Burger h1, .index__section__menu .menu__container .menu .midi h1, .index__section__menu .menu__container .menu .Dessert h1, .index__section__menu .menu__container .menu .Cocktails h1, .index__section__menu .menu__container .menu .Boissons h1, .index__section__menu .menu__container .menu .Enfant h1 {
   text-align: center;
   margin: 0 auto;
   margin-top: 0;
@@ -484,6 +461,14 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: auto;
   margin-top: 3%;
+}
+
+.midi h2 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.3em;
+  color: #592202;
+  font-family: "Cherry Swash", cursive;
 }
 
 .item_annexe1 {
@@ -546,6 +531,9 @@ body::-webkit-scrollbar-thumb {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 90%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   margin: 4% auto;
   padding-bottom: 8px;
   border: 2px solid #592202;
@@ -594,5 +582,122 @@ body::-webkit-scrollbar-thumb {
   width: 120px;
   background-color: #592202;
   color: #F2F2F2;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #592202;
+}
+
+footer .footer__container {
+  margin-top: 1%;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0px 0px 10px 10px;
+  background-color: transparent;
+  border: 2px solid beige;
+  border-top: none;
+}
+
+footer .horraire__container {
+  width: 50%;
+  height: auto;
+}
+
+footer .horraire__container h1 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.7em;
+  padding: 15px;
+  color: beige;
+  font-family: "Cherry Swash", cursive;
+}
+
+footer .horraire__container p {
+  text-align: center;
+  margin-top: 0;
+  padding: 5px;
+  font-size: 1.2em;
+  color: beige;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer .coppyright__container {
+  width: 50%;
+  height: auto;
+}
+
+footer .coppyright__container h1 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.7em;
+  padding: 15px;
+  color: beige;
+  font-family: "Cherry Swash", cursive;
+}
+
+footer .coppyright__container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10%;
+}
+
+footer .coppyright__container li {
+  margin-left: 8%;
+}
+
+footer .coppyright__container a {
+  color: beige;
+  font-size: 1.5em;
+}
+
+.sub__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px;
+}
+
+.sub__footer .element__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+}
+
+.sub__footer h1 {
+  color: beige;
+  font-size: 1.1em;
+}
+
+.sub__footer i {
+  color: red;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.sub__footer a {
+  text-decoration: none;
+  color: beige;
 }
 /*# sourceMappingURL=main.css.map */
